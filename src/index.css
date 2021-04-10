@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('./images/bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ddd;
+  font-size: 25px;
+  font-weight: 300;
+  font-family: 'Charm', cursive;
+  text-align: center;
+}
+
+h1 {
+  font-size: 220%;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 130%;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  color: #ddd;
+  padding: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.397);
+}
+
+header > .brandName {
+  font-size: 170%;
+  margin-right: 10px;
+}
+
+header .nav-item {
+  list-style: none;
+  display: inline-block;
+  margin: 5px 0;
+}
+
+header .nav-link {
+  padding: 5px;
+  text-decoration: none;
+  color: rgb(199, 199, 199);
+  transition: all 0.3s;
+}
+
+header .nav-link:hover {
+  color: #fff;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-home {
+  background-color: #eee;
+  color: rgb(65, 65, 65);
+  width: 300px;
+  padding: 10px 20px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid rgb(200, 200, 200);
+}
+
+.search-button {
+  cursor: pointer;
+  width: 70px;
+  background-color: #eee;
+  color: rgb(65, 65, 65);
+  font-size: 18px;
+  padding: 10px 20px;
+  outline: none;
+  border: 1px solid rgb(200, 200, 200);
+  transition: all 0.3s;
+}
+
+.search-button:hover {
+  background-color: rgb(163, 163, 163);
+}
+
+.dropdown {
+  width: 130px;
+  cursor: pointer;
+  background-color: #eee;
+  color: rgb(65, 65, 65);
+  padding: 10px 25px 10px 20px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid rgb(200, 200, 200);
+}
+
+.dropdown:focus {
+  background-color: rgb(212, 212, 212);
+}
+
+section {
+  padding: 20px;
+}
+
+.description {
+  margin: 10px 0 20px;
+}
+
+.track-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  text-align: left;
+}
+
+.track {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(177, 177, 177);
+}
+
+.track span {
+  font-size: 25px;
+  font-weight: 400;
+  padding: 10px 15px;
+  border-right: 1px solid rgb(177, 177, 177);
+}
+
+.track a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: rgb(200, 200, 200);
+  transition: all 0.3s;
+}
+
+.track a:hover,
+.track a:hover small {
+  color: #fff;
+}
+
+.track small {
+  display: block;
+  color: rgb(170, 170, 170);
+  transition: all 0.3s;
+}
+
+footer {
+  margin: 30px 0;
+}
+
+footer > a {
+  text-decoration: none;
+  color: #ddd;
+}
+
+.fab {
+  margin-top: 15px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.fab:hover {
+  color: #eece1a;
+}
+
+.author {
+  margin-top: 15px;
+  color: #fff;
+  font-size: 120%;
+}
+
+@media (max-width: 691px) {
+  header {
+    flex-wrap: wrap;
+  }
+
+  header > .brandName {
+    margin-bottom: 10px;
+  }
+
+  .search-home {
+    width: 200px;
+    padding: 10px;
+  }
+
+  .search-button {
+    width: 50px;
+    padding: 10px;
+  }
+
+  .dropdown {
+    width: 90px;
+    padding: 10px 5px;
+  }
+
+  .track-list {
+    grid-template-columns: 1fr;
+  }
+}
