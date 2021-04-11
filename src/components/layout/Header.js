@@ -2,36 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
-  const links = [
-    'News & Gossip',
-    'Top Charts',
-    'A',
-    'B',
-    'C',
-    'D',
-    'E',
-    'F',
-    'J',
-    'H',
-    'I',
-    'J',
-    'K',
-    'L',
-    'M',
-    'N',
-    'O',
-    'P',
-    'Q',
-    'R',
-    'S',
-    'T',
-    'U',
-    'V',
-    'W',
-    'X',
-    'Y',
-    'Z',
-  ];
+  const alphabet = Array.from(Array(26))
+    .map((e, i) => i + 65)
+    .map((x) => String.fromCharCode(x));
+
+  const links = ['News & Gossip', 'Top Charts', ...alphabet];
 
   return (
     <header>
