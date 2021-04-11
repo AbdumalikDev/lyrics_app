@@ -6,7 +6,7 @@
 
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('./images/bg.jpg');
+    url('./images/bg1.jpg');
   background-size: cover;
   background-attachment: fixed;
   color: #ddd;
@@ -22,7 +22,7 @@ h1 {
 }
 
 h2 {
-  font-size: 130%;
+  font-size: 140%;
   font-weight: 300;
   margin-bottom: 20px;
 }
@@ -173,10 +173,25 @@ footer > a {
   color: #eece1a;
 }
 
+.lyrics {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
 .author {
-  margin-top: 15px;
-  color: #fff;
   font-size: 120%;
+}
+
+.redirect {
+  display: block;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.redirect:hover {
+  color: #eece1a;
 }
 
 @media (max-width: 691px) {
