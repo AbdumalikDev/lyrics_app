@@ -195,6 +195,10 @@ footer > a {
 }
 
 @media (max-width: 691px) {
+  body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('./images/bg.jpg');
+  }
   header {
     flex-wrap: wrap;
   }
