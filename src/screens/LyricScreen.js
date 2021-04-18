@@ -12,7 +12,7 @@ class LyricScreen extends Component {
   componentDidMount() {
     axios
       .get(
-        `https://api.musixmatch.com/ws/1.1/track.get?track_id=${this.props.match.params.id}&apikey=${process.env.REACT_APP_MM_KEY}`
+        `/track.get?track_id=${this.props.match.params.id}&apikey=${process.env.REACT_APP_MM_KEY}`
       )
       .then((res) => {
         this.setState({ track: res.data.message.body.track });
@@ -20,7 +20,7 @@ class LyricScreen extends Component {
 
         return axios
           .get(
-            `https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=${this.props.match.params.id}&apikey=${process.env.REACT_APP_MM_KEY}`
+            `/track.lyrics.get?track_id=${this.props.match.params.id}&apikey=${process.env.REACT_APP_MM_KEY}`
           )
           .then((res) => {
             console.log(res.data);
