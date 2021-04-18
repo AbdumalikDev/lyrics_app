@@ -12,7 +12,7 @@ class LyricScreen extends Component {
   componentDidMount() {
     axios
       .get(
-        `https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.get?track_id=${this.props.match.params.id}&apikey=${process.env.REACT_APP_MM_KEY}`
+        `https://api.musixmatch.com/ws/1.1/track.get?track_id=${this.props.match.params.id}&apikey=${process.env.REACT_APP_MM_KEY}`
       )
       .then((res) => {
         this.setState({ track: res.data.message.body.track });
@@ -20,7 +20,7 @@ class LyricScreen extends Component {
 
         return axios
           .get(
-            `https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=${this.props.match.params.id}&apikey=${process.env.REACT_APP_MM_KEY}`
+            `https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=${this.props.match.params.id}&apikey=${process.env.REACT_APP_MM_KEY}`
           )
           .then((res) => {
             console.log(res.data);
