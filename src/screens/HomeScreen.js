@@ -6,7 +6,7 @@ const HomeScreen = () => {
   return (
     <Fragment>
       <section>
-        <h1>Lyrics Finder</h1>
+        <h1>Mix Lyrics</h1>
         <p className='description'>
           Find lyrics for any song - search by track or artist
         </p>

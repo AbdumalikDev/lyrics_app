@@ -6,13 +6,13 @@ const Header = () => {
     .map((e, i) => i + 65)
     .map((x) => String.fromCharCode(x));
 
-  const links = ['News & Gossip', 'Top Charts', ...alphabet];
+  const links = ['News', 'Top Charts', ...alphabet];
 
   return (
     <header>
       <div className='brandName'>
         <Link to='/' className='nav-link'>
-          Lyrics Finder <i className='fas fa-music'></i>
+          Mix Lyrics <i className='fas fa-music'></i>
         </Link>
       </div>
       <ul>
